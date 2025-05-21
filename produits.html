@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - La Petite Boucherie du Coin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+    <div class="header-bar">
+        <div class="logo">
+        <img src="images/logo.png" alt="Logo La Petite Boucherie du Coin">
+        </div>
+        <button class="burger" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+    </div>
+    <nav>
+        <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html" class="active">Produit</a></li>
+        <li><a href="informations.html">Informations</a></li>
+        <li><a href="privacy.html">Politique de confidentialité</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="search-filter">
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Rechercher un produit...">
+        <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="sort-filter">
+        <label for="sort-select">Trier par :</label>
+        <select id="sort-select">
+        <option value="price-asc">Prix croissant</option>
+        <option value="price-desc">Prix décroissant</option>
+        <option value="name-asc">Nom A-Z</option>
+        <option value="name-desc">Nom Z-A</option>
+        </select>
+    </div>
+    </section>
+
+    <p class="disclaimer">Images de synthèse à titre illustratif</p>
+
+    <section class="products">
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/brochette-dinde.png" alt="Brochette de dinde">
+                <h3>Brochette de dinde</h3>
+                <p class="price">3,90 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/brochette-mexicaine.png" alt="Brochette mexicaine">
+                <h3>Brochette mexicaine</h3>
+                <p class="price">3,10 CHF/100g</p>
+                <p class="description">Porc boeuf Suisse, sel, poivres, moutarde, paprika, panure, ail, herbes, épices</p>
+            </div>
+            <div class="product-item">
+                <img src="images/brochette-poulet-sticks-paprika.png" alt="Brochette de poulet sticks paprika">
+                <h3>Brochette de poulet sticks paprika</h3>
+                <p class="price">2,90 CHF/100g</p>
+                <p class="description">Poulet Suisse, épices, paprika</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chipo-porc-ail-ours-maison.png" alt="Chipo de porc à l'ail des ours maison">
+                <h3>Chipo de porc à l'ail des ours "maison"</h3>
+                <p class="price">2,95 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, poivres, herbes, ail des ours, moutarde</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chipo-porc-basilic-tomates-maison.png" alt="Chipo de porc basilic-tomates maison">
+                <h3>Chipo de porc basilic-tomates "maison"</h3>
+                <p class="price">2,95 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, poivres, épices, herbes, basilic, tomates, moutarde</p>
+            </div>
+            <div class="product-item">
+                <img src="images/Chipo-porc-curry-maison.png" alt="Chipo de porc curry maison">
+                <h3>Chipo de porc curry "maison"</h3>
+                <p class="price">2,95 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, poivres, épices, herbes, curry, moutarde</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chipo-pot-fenouils.png" alt="Chipo de porc aux fenouils">
+                <h3>Chipo de porc aux fenouils</h3>
+                <p class="price">2,95 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chipo-porc-thai-maison.png" alt="Chipo de porc thaï maison">
+                <h3>Chipo de porc thaï "maison"</h3>
+                <p class="price">2,95 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, épices, cachuètes</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chipo-veau-lardee.png" alt="Chipo de veau lardée">
+                <h3>Chipo de veau lardée</h3>
+                <p class="price">3,30 CHF/100g</p>
+                <p class="description">Veau Suisse, Porc Suisse, eau, sel, caséinate de sodium, épices E450, glucose E321, E575, condiments, boyau de mouton, lactose</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chorizo-maison-griller.png" alt="Chorizo maison à griller">
+                <h3>Chorizo "maison" à griller</h3>
+                <p class="price">2.95 CHF/100g</p>
+                <p class="description">Porc Suisse, ail, sel, poivrons, piments, sucre, paprika</p>
+            </div>
+            <div class="product-item">
+                <img src="images/chorizo.png" alt="Chorizo">
+                <h3>Chorizo</h3>
+                <p class="price">3,50 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/coin-wapiti.png" alt="Coin de Wapiti">
+                <h3>Coin de Wapiti</h3>
+                <p class="price">5,90 CHF/100g</p>
+                <p class="description">Nouvelle-Zélande</p>
+            </div>
+            <div class="product-item">
+                <img src="images/coquille-agneau.png" alt="Coquille d'agneau">
+                <h3>Coquille d'agneau</h3>
+                <p class="price">7,40 CHF/100g</p>
+                <p class="description">Nouvelle-Zélande</p>
+            </div>
+            <div class="product-item">
+                <img src="images/cordon-bleu-porc-paysan-maison.png" alt="Cordon-bleu de porc Paysan maison">
+                <h3>Cordon-bleu de porc Paysan "maison"</h3>
+                <p class="price">3,50 CHF/100g</p>
+                <p class="description">Porc Suisse, Viande séchée Suisse, fromage, sel, épices, poivres, panure, lait</p>
+            </div>
+            <div class="product-item">
+                <img src="images/cordon-bleu-valaison-maison.png" alt="Cordon-bleu Valaisan maison">
+                <h3>Cordon-bleu Valaisan "maison"</h3>
+                <p class="price">3,50 CHF/100g</p>
+                <p class="description">Porc Suisse, Jambon cru Suisse, fromage, sel, épices, poivres, panure, lait, paprika</p>
+            </div>
+            <div class="product-item">
+                <img src="images/cordon-mexicain.png" alt="Cordon bleu mexicain">
+                <h3>Cordon bleu mexicain</h3>
+                <p class="price">3,90 CHF/100g</p>
+                <p class="description">Poulet Suisse, Chorizo, Chili, Panure</p>
+            </div>
+            <div class="product-item">
+                <img src="images/cote-boeuf.png" alt="Côte de boeuf">
+                <h3>Côte de boeuf</h3>
+                <p class="price">7,50 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/entrecote-cheval.png" alt="Entrecôte de cheval">
+                <h3>Entrecôte de cheval</h3>
+                <p class="price">6,30 CHF/100g</p>
+                <p class="description">Uruguay</p>
+            </div>
+            <div class="product-item">
+                <img src="images/entrecote-genisse-royal.png" alt="Entrecôte de génisse Royal">
+                <h3>Entrecôte de génisse Royal</h3>
+                <p class="price">8,40 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/escalope-dinde-panee.png" alt="Escalope de dinde panée">
+                <h3>Escalope de dinde panée</h3>
+                <p class="price">3,80 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/escalope-porc-quasi.png" alt="Esaclope de porc quasi">
+                <h3>Esaclope de porc quasi</h3>
+                <p class="price">2,70 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/escalope-poulet.png" alt="Escalope de poulet">
+                <h3>Escalope de poulet</h3>
+                <p class="price">3,80 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/escalope-veau.png" alt="Esaclope de veau">
+                <h3>Esaclope de veau</h3>
+                <p class="price">8,40 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/escalope-veau.png" alt="Terrine de campagne maison">
+                <h3>Terrine de campagne "maison"</h3>
+                <p class="price">3,60 CHF/100g</p>
+                <p class="description">Porc Suisse, Foie Suisse, champignons, sel, sel nitrité, poivres, épices, oignons rôtis, fécule de pomme de terre, cognac, oeufs</p>
+            </div>
+            <div class="product-item">
+                <img src="images/filet-boeuf.png" alt="Filet de boeuf">
+                <h3>Filet de boeuf</h3>
+                <p class="price">9,90 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/fumee-cheval.png" alt="Fumée de cheval">
+                <h3>Fumée de cheval</h3>
+                <p class="price">5,80 CHF/100g</p>
+                <p class="description">Elaboré en Suisse avec de la viande d'Argentine, sel nitrité, sel, E250, acidifiant E331, antioxydants, E301 et E304, dextrose</p>
+            </div>
+            <div class="product-item">
+                <img src="images/hamburger-boeuf.png" alt="Hamburger de boeuf">
+                <h3>Hamburger de boeuf</h3>
+                <p class="price">3 CHF/100g</p>
+                <p class="description">Boeuf Suisse, sel, poivres, paprika, panure</p>
+            </div>
+            <div class="product-item">
+                <img src="images/jambon-cru-artisanal.png" alt="Jambon cru artisanal">
+                <h3>Jambon cru "artisanal"</h3>
+                <p class="price">6,50 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, herbes, sel nitrité</p>
+            </div>
+            <div class="product-item">
+                <img src="images/jambon-cuit-braise.png" alt="Jambon cuit braisé">
+                <h3>Jambon cuit "braisé"</h3>
+                <p class="price">3,95 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, sel nitrité, concervateur E250, sirop de glucose, épices</p>
+            </div>
+            <div class="product-item">
+                <img src="images/lard-fume-sans-couenne.png" alt="Lard fumé sans couenne">
+                <h3>Lard fumé sans couenne</h3>
+                <p class="price">3,10 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/lard-sec-artisanal.png" alt="Lard sec artisanal">
+                <h3>Lard sec "artisanal"</h3>
+                <p class="price">5.20 CHF/100g</p>
+                <p class="description">Porc Suisse, herbes, sel, sel nitrité</p>
+            </div>
+            <div class="product-item">
+                <img src="images/mignonnette-paprika.png" alt="Mignonnette au paprika">
+                <h3>Mignonnette au paprika</h3>
+                <p class="price">5,90 CHF/100g</p>
+                <p class="description">Porc Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/onglet-boeuf.png" alt="Onglet de boeuf">
+                <h3>Onglet de boeuf</h3>
+                <p class="price">4,80 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/pate-croute-au-porto.png" alt="Pâté en croûte au porto">
+                <h3>Pâté en croûte "au porto"</h3>
+                <p class="price">3,95 CHF/100g</p>
+                <p class="description">Boeuf Suisse, Lard Suisse, Porc Suisse, sel, poivre, cognac, lactose, pistache</p>
+            </div>
+            <div class="product-item">
+                <img src="images/rock'n-roll.png" alt="Rock'nRoll">
+                <h3>Rock'nRoll</h3>
+                <p class="price">6,95 CHF/100g</p>
+                <p class="description">Boeuf Suisse, herbes, ail, huile, sel, poivres</p>
+            </div>
+            <div class="product-item">
+                <img src="images/roti-porc-epaule.png" alt="Rôti de porc épaule">
+                <h3>Rôti de porc épaule</h3>
+                <p class="price">2,40 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/rumsteak-cheval.png" alt="Rumsteak de cheval">
+                <h3>Rumsteak de cheval</h3>
+                <p class="price">5,20 CHF/100g</p>
+                <p class="description">Argentine</p>
+            </div>
+            <div class="product-item">
+                <img src="images/salami-poivres.png" alt="Salami aux poivres">
+                <h3>Salami aux poivres</h3>
+                <p class="price">5,30 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-cheval-noisettes.png" alt="Saucisse de cheval aux noisettes">
+                <h3>Saucisse de cheval aux noisettes</h3>
+                <p class="price">8,90 CHF/la pièce</p>
+                <p class="description">Viande de cheval 65g (Canada), Viande de porc 36g (Suisse), lard, noisettes (10%), sel nitrité pour saumure (sel de cuisine, concervateur E250), lait en poudre, lactose, épices, glucose, antioxydant, acide ascorbique, concervateur : E252, arômes, poivre</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-paysanne-porc.png" alt="Saucisse paysanne de porc">
+                <h3>Saucisse paysanne de porc</h3>
+                <p class="price">8,90 CHF/la pièce</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-rotir-maison.png" alt="Saucisse à rôtir maison">
+                <h3>Saucisse à rôtir "maison"</h3>
+                <p class="price">2,40 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, poivres, épices, herbes, moutarde</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-seche-ail.png" alt="Saucisse sèche à l'ail">
+                <h3>Saucisse sèche à l'ail</h3>
+                <p class="price">8,90 CHF/100g</p>
+                <p class="description">Porc Suisse, ail, épices</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-seche-fenouil.png" alt="Saucisse sèche au fenouil">
+                <h3>Saucisse sèche au fenouil</h3>
+                <p class="price">8,90 CHF/100g</p>
+                <p class="description">Porc Suisse, fénouil, épices</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-seche-piments.png" alt="Saucisse sèche aux piments">
+                <h3>Saucisse sèche aux piments</h3>
+                <p class="price">9,90 CHF/100g</p>
+                <p class="description">Porc Suisse, piments, épices</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saucisse-seche-poivres.png" alt="Saucisse sèche aux poivres">
+                <h3>Saucisse sèche aux poivres</h3>
+                <p class="price">9,90 CHF/100g</p>
+                <p class="description">Porc Suisse, épices, poivres</p>
+            </div>
+            <div class="product-item">
+                <img src="images/spar-ips-porc.png" alt="Spar ips de porc">
+                <h3>Spar ips de porc</h3>
+                <p class="price">2,90 CHF/100g</p>
+                <p class="description">Porc Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/steak-boeuf-coin.png" alt="Steak de boeuf (coin)">
+                <h3>Steak de boeuf (coin)</h3>
+                <p class="price">6,50 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/steak-boeuf-tartare-maison.png" alt="Steak de boeuf tartar maison">
+                <h3>Steak de boeuf tartar "maison"</h3>
+                <p class="price">5,30 CHF/100g</p>
+                <p class="description">Boeuf Suisse, épices, ail, moutarde</p>
+            </div>
+            <div class="product-item">
+                <img src="images/steak-gigot-agneau.png" alt="Steak gigot d'agneau">
+                <h3>Steak gigot d'agneau</h3>
+                <p class="price">5,30 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/tranche-panee-maison.png" alt="Tranche pannée maison">
+                <h3>Tranche pannée "maison"</h3>
+                <p class="price">3,10 CHF/100g</p>
+                <p class="description">Porc Suisse, sel, poivres, épices, panure, lait</p>
+            </div>
+            <div class="product-item">
+                <img src="images/saltimbocca.png" alt="Saltimbocca">
+                <h3>Saltimbocca</h3>
+                <p class="price">4,30 CHF/100g</p>
+                <p class="description">Suisse</p>
+            </div>
+            <div class="product-item">
+                <img src="images/travers-porc-whisky.png" alt="Travers de porc au Whisky">
+                <h3>Travers de porc au Whisky</h3>
+                <p class="price"> CHF/100g</p>
+                <p class="description">Porc Suisse, épices, huile</p>
+            </div>
+            <div class="product-item">
+                <img src="images/viande-boeuf-sechee.png" alt="Viande de boeuf séchée">
+                <h3>Viande de boeuf séchée</h3>
+                <p class="price">9,90 CHF/100g</p>
+                <p class="description">Boeuf Suisse, sel, herbes, sel nitrité</p>
+            </div>
+            <div class="product-item">
+                <img src="images/viande-cheval-sechee.png" alt="Viande de cheval séchée">
+                <h3>Viande de cheval séchée</h3>
+                <p class="price">6,50 CHF/100g</p>
+                <p class="description">Cheval Uruguay élaboré en Suisse, sel, herbes, sel nitrité</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+            <img src="images/logo.png" alt="Logo La Petite Boucherie du Coin">
+            </div>
+            <div class="footer-links">
+            <a href="privacy.html">Politique de confidentialité</a>
+            <a href="mailto:lapetiteboucherieducoin@gmail.com">Contact</a>
+            <a href="https://github.com/philippe2804/lapetiteboucherieducoin" target="_blank">Code source sur GitHub</a>
+            </div>
+            <p class="footer-copy">© 2025 La Petite Boucherie du Coin. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
